@@ -7,7 +7,7 @@ import org.litepal.crud.DataSupport;
  * Created by dellc on 2017/6/7.
  */
 
-public class County extends DataSupport{
+public class County extends DataSupport {
     private int id;
     private String countyName;//县的名字
     private String weaterId;//县的代号
