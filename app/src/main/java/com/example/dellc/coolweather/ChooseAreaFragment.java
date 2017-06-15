@@ -91,13 +91,11 @@ public class ChooseAreaFragment extends Fragment {
                 } else if (currentLevel == LEVEL_CITY) {
                     selectedCity = cityList.get(position);
                     queryCounties();
-
-
                     //从县区列表跳转到天气界面
                 }else if(currentLevel==LEVEL_COUNTY){
                     String weatherId=countyList.get(position).getWeaterId();
                     if(getActivity() instanceof  MainActivity) {
-                        Toast.makeText(getContext(), "列表跳转到天气界面", Toast.LENGTH_SHORT).show();
+                     //  Toast.makeText(getContext(), "列表跳转到天气界面", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getActivity(), WeatherActivity.class);
                         intent.putExtra("weather_id", weatherId);
                         startActivity(intent);
